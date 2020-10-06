@@ -516,7 +516,7 @@ func Exec(name string, command []string, remote Remote) (int, error) {
 		Command:      command,
 		WaitForWS:    true,
 		RecordOutput: true,
-		Interactive:  false,
+		Interactive:  true,
 	}
 
 	args := lxd.InstanceExecArgs{
